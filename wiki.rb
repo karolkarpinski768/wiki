@@ -1,6 +1,7 @@
 require "sinatra"
 require "uri"
 
+set :bind, "0.0.0.0"
 
 def page_content(title)
   File.read("pages/#{title}.txt")
